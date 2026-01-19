@@ -1,0 +1,7 @@
+services:
+  dao-governance:
+    build: .
+    container_name: dao-governance
+    volumes:
+      - .:/app
+    command: npx hardhat test
